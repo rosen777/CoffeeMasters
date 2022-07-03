@@ -14,6 +14,7 @@ struct OrdersPage: View {
     @State var name: String = ""
     @State var phone: String = ""
     
+    
     var body: some View {
         NavigationView {
                     if cartManager.cart.count == 0 {
@@ -44,8 +45,8 @@ struct OrdersPage: View {
                                     Spacer()
                                     Text("Total")
                                     Spacer()
-//                                    Text("$ \(cartManager.total(), specifier: "%.2f")")
-//                                        .bold()
+                                    Text("$ \(cartManager.total(), specifier: "%.2f")")
+                                        .bold()
                                     Spacer()
                                 }
                             }.listRowBackground(Color.clear)
